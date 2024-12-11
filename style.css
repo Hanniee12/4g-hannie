@@ -19,7 +19,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-/* Các style khác của bạn */
+
 
 footer {
     text-align: center;
@@ -34,45 +34,45 @@ footer {
 
 h1 {
     text-align: center;
-    color: #333;  /* Màu chữ mặc định */
+    color: #333;  
     font-family: 'Arial', sans-serif;
     font-size: 36px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
     font-weight: bold;
-    animation: changeColor 5s infinite;  /* Áp dụng hiệu ứng đổi màu */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Bóng đổ nhẹ */
+    animation: changeColor 5s infinite; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
-/* Định nghĩa hiệu ứng đổi màu */
+
 @keyframes changeColor {
     0% {
-        color: #007BFF;  /* Màu xanh lam */
+        color: #007BFF; 
     }
     15%{
         color: #ee06c7;
     }
     25% {
-        color: #FF5733;  /* Màu đỏ */
+        color: #FF5733; 
     }
     45%{
         color: #2112ff;
     }
     50% {
-        color: #FFC107;  /* Màu vàng */
+        color: #FFC107;  
     }
     65%{
         color: #e7aede;
     }
     75% {
-        color: #9B59B6;  /* Màu tím */
+        color: #9B59B6;  
     }
     85%{
         color: #03dffc;
     }
     100% {
-        color: #007BFF;  /* Trở lại màu ban đầu (xanh lam) */
+        color: #007BFF; 
     }
 }
 
@@ -111,10 +111,10 @@ button:hover {
     text-align: center;
 }
 .container {
-    background-color: rgba(255, 255, 255, 0.5); /* Nền trắng trong suốt (độ mờ là 0.5) */
+    background-color: rgba(255, 255, 255, 0.5); 
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     width: 300px;
 }
 p {
@@ -122,7 +122,7 @@ p {
     font-size: 14px;
 }
 
-/* Nút nhỏ cho Đăng Ký và Đăng Nhập */
+
 .small-btn {
     padding: 5px 10px;
     font-size: 12px;
