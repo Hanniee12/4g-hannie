@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập & Đăng Ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="form-title">Đăng Nhập</h1>
+
+        <div id="login-form">
+            <label for="login-username">Tên tài khoản:</label>
+            <input type="text" id="login-username" required>
+
+            <label for="login-password">Mật khẩu:</label>
+            <input type="password" id="login-password" required>
+
+            <div id="login-error-message" class="error"></div>
+
+            <button id="login-btn">Đăng Nhập</button>
+
+            <p>Bạn chưa có tài khoản? 
+                <span id="show-register-form" class="small-btn">Đăng Ký</span>
+            </p>
+        </div>
+
+        <div id="register-form" style="display: none;">
+            <label for="register-username">Tên tài khoản:</label>
+            <input type="text" id="register-username" required>
+
+            <label for="register-password">Mật khẩu:</label>
+            <input type="password" id="register-password" required>
+
+            <div id="register-error-message" class="error"></div>
+
+            <button id="register-btn">Đăng Ký</button>
+
+            <p>Đã có tài khoản? 
+                <span id="show-login-form" class="small-btn">Đăng Nhập</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

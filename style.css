@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/one.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Các style khác của bạn */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;  /* Màu chữ mặc định */
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: changeColor 5s infinite;  /* Áp dụng hiệu ứng đổi màu */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Bóng đổ nhẹ */
+}
+
+/* Định nghĩa hiệu ứng đổi màu */
+@keyframes changeColor {
+    0% {
+        color: #007BFF;  /* Màu xanh lam */
+    }
+    15%{
+        color: #ee06c7;
+    }
+    25% {
+        color: #FF5733;  /* Màu đỏ */
+    }
+    45%{
+        color: #2112ff;
+    }
+    50% {
+        color: #FFC107;  /* Màu vàng */
+    }
+    65%{
+        color: #e7aede;
+    }
+    75% {
+        color: #9B59B6;  /* Màu tím */
+    }
+    85%{
+        color: #03dffc;
+    }
+    100% {
+        color: #007BFF;  /* Trở lại màu ban đầu (xanh lam) */
+    }
+}
+
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Nền trắng trong suốt (độ mờ là 0.5) */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ cho form */
+    width: 300px;
+}
+p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Nút nhỏ cho Đăng Ký và Đăng Nhập */
+.small-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.small-btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
