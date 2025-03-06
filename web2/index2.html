@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('../img/one.jpg');
+            background-image: url('https://images3.alphacoders.com/138/thumb-1920-1385776.jpg');
             font-family: Arial, sans-serif;
             background-size: cover;
             background-position: center center;
@@ -234,7 +234,11 @@
         #qr-popup button:hover {
             background: #0056b3;
         }
-        
+        p:first-child{
+            font-weight: bold;
+    animation: changeColor 5s infinite; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+        }
         
         h2 {
           font-family: 'Arial', sans-serif;
@@ -245,17 +249,30 @@
           margin-top: 90px;
           letter-spacing: 2px;
           transition: color 0.3s ease;
+          color: white;
+          font-weight: bold;
+    animation: changeColor 5s infinite; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
         }
         
-        h2:hover {
-          color: #141414;
-        }
+      
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+        @keyframes changeColor {
+    0% { color: #007BFF; }  
+    15% { color: #ee06c7; }  
+    25% { color: #FF5733; }  
+    45% { color: #2112ff; }  
+    50% { color: #FFC107; }  
+    65% { color: #e7aede; }  
+    75% { color: #9B59B6; }  
+    85% { color: #03dffc; }  
+    100% { color: #007BFF; }
+}
      
 
         footer {
@@ -296,34 +313,38 @@
 
         <section id="services">
             <div class="service-card">
-                <h3>[VIETTEL] MaxSpeed 1THÁNG</h3>
-                <p>20.000 đ</p>
+                <h3>[VIETTEL] Cấp Học sinh 1THÁNG </h3>
+                <p>30.000 đ</p>
                 <p>Thời gian sử dụng: 1 tháng</p>
-                <p>Dung lượng: 1000GB</p>
-                <button onclick="showQR('hannwwww', 25000)">MUA NGAY</button>
+                <p>Dung lượng: Vô hạn 1 tháng</p>
+                <button onclick="showQR('sđt:...', 30000)">MUA NGAY</button>
             </div>
             <div class="service-card">
                 <h3>[vinaphone] MaxSpeed 1 THÁNG</h3>
                 <p>30.000 đ</p>
                 <p>Thời gian sử dụng: 1 tháng</p>
                 <p>Dung lượng: 500GB</p>
-                <button onclick="showQR('hannwwww', 30000)">MUA NGAY</button>
+                <p>Tạm thời không dùng được nhé...</p>
+                <button onclick="showQR('sđt:...', 30000)">MUA NGAY</button>
             </div>
             <div class="service-card">
                 <h3>[VIETTEL] MaxSpeed 1 tháng sever game</h3>
-                <p>30.000 đ</p>
+                <p>40.000 đ</p>
                 <p>Thời gian sử dụng: 1 tháng</p>
-                <p>Dung lượng: 1000GB</p>
-                <button onclick="showQR('hannwwww', 30000)">MUA NGAY</button>
+                <p>Dung lượng: Vô hạn 1 tháng</p>
+                <button onclick="showQR('sđt:...', 40000)">MUA NGAY</button>
             </div>
+
+
         </section>
+        
 
         <section id="qr-container" style="display: none;">
             <div id="qr-popup">
                 <img src="../img/qe.jpg" alt="Mã QR">
                 <p id="qr-price">Giá: </p>
                 <p>Nội dung: <span id="qr-content"></span></p>
-                <p>Hãy chụp buil và gửi về số <strong>0399456755</strong> để mua gói.</p>
+                <p>Hãy chụp buil và gửi về zalo <strong>0399456755</strong> để mua gói.</p>
                 <button onclick="closeQR()">Đóng</button>
             </div>
         </section>
