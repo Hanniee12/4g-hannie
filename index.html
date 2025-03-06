@@ -10,35 +10,41 @@
         <h1 id="form-title">Đăng Nhập</h1>
 
         <div id="login-form">
-            <label for="login-username">Tên tài khoản:</label>
-            <input type="text" id="login-username" required>
-
-            <label for="login-password">Mật khẩu:</label>
-            <input type="password" id="login-password" required>
-
-            <div id="login-error-message" class="error"></div>
-
-            <button id="login-btn">Đăng Nhập</button>
-
-            <p>Bạn chưa có tài khoản? 
-                <span id="show-register-form" class="small-btn">Đăng Ký</span>
-            </p>
+            <div class="login-form-for">
+                <label for="login-username">Tên tài khoản</label>
+                <input type="text" id="login-username" required>
+    
+                <label for="login-password">Mật khẩu</label>
+                <input type="password" id="login-password" required>
+    
+                <div id="login-error-message" class="error"></div>
+    
+                <button id="login-btn">Đăng Nhập</button>
+    
+                <p>Bạn chưa có tài khoản? 
+                    <span id="show-register-form" class="small-btn">Đăng Ký</span>
+                </p>
+            </div>
         </div>
 
         <div id="register-form" style="display: none;">
-            <label for="register-username">Tên tài khoản:</label>
-            <input type="text" id="register-username" required>
-
-            <label for="register-password">Mật khẩu:</label>
-            <input type="password" id="register-password" required>
-
-            <div id="register-error-message" class="error"></div>
-
-            <button id="register-btn">Đăng Ký</button>
-
-            <p>Đã có tài khoản? 
-                <span id="show-login-form" class="small-btn">Đăng Nhập</span>
-            </p>
+            <div class="register-form-for">
+                <label for="register-username">Tên tài khoản</label>
+                <input type="text" id="register-username" required>
+    
+                <label for="register-password">Mật khẩu</label>
+                <input type="password" id="register-password" required>
+                <label for="register-password">Nhập lại Mật khẩu</label>
+                <input type="password" id="register-password" required>
+    
+                <div id="register-error-message" class="error"></div>
+    
+                <button id="register-btn">Đăng Ký</button>
+    
+                <p>Đã có tài khoản? 
+                    <span id="show-login-form" class="small-btn">Đăng Nhập</span>
+                </p>
+            </div>
         </div>
     </div>
 
