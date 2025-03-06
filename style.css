@@ -1,6 +1,7 @@
 body {
+    cursor: url(https://mmo.yunagrp.com/cusor/Normal.gif), auto;
     font-family: Arial, sans-serif;
-    background-image: url('./img/one.jpg');
+    background-image: url('https://images3.alphacoders.com/138/thumb-1920-1385776.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -9,31 +10,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh; /* Đảm bảo toàn màn hình */
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+.container {
+    
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 80%;
+    text-align: center; /* Căn giữa nội dung trong container */
 }
 
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
+/* Tiêu đề với hiệu ứng đổi màu */
 h1 {
-    text-align: center;
     color: #333;  
     font-family: 'Arial', sans-serif;
     font-size: 36px;
@@ -45,95 +37,94 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
-
+/* Hiệu ứng đổi màu */
 @keyframes changeColor {
-    0% {
-        color: #007BFF; 
+    0% { color: #007BFF; }  
+    15% { color: #ee06c7; }  
+    25% { color: #FF5733; }  
+    45% { color: #2112ff; }  
+    50% { color: #FFC107; }  
+    65% { color: #e7aede; }  
+    75% { color: #9B59B6; }  
+    85% { color: #03dffc; }  
+    100% { color: #007BFF; }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Mở rộng hơn trên điện thoại */
+     
     }
-    15%{
-        color: #ee06c7;
+
+    h1 {
+        font-size: 28px; /* Giảm kích thước tiêu đề một chút để vừa màn hình */
     }
-    25% {
-        color: #FF5733; 
+
+    #login-form label {
+        font-size: 1.5rem; /* Tăng kích thước chữ nhãn */
     }
-    45%{
-        color: #2112ff;
+
+    #login-form input {
+        font-size: 100%; /* Tăng kích thước chữ trong ô nhập */
+        padding: 15px; /* Tăng khoảng cách bên trong ô nhập */
     }
-    50% {
-        color: #FFC107;  
-    }
-    65%{
-        color: #e7aede;
-    }
-    75% {
-        color: #9B59B6;  
-    }
-    85%{
-        color: #03dffc;
-    }
-    100% {
-        color: #007BFF; 
+
+    button {
+        font-size: 1.5rem; /* Tăng kích thước chữ nút bấm */
+        padding: 15px; /* Làm cho nút lớn hơn */
     }
 }
 
-
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-}
-
+/* Nút bấm */
 button {
+    margin-top: 20px;
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #d02525bf;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
+/* Footer */
+footer {
     text-align: center;
-}
-.container {
-    background-color: rgba(255, 255, 255, 0.5); 
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    width: 300px;
-}
-p {
-    text-align: center;
-    font-size: 14px;
-}
-
-
-.small-btn {
-    padding: 5px 10px;
-    font-size: 12px;
-    background-color: transparent;
-    color: #4CAF50;
-    border: 1px solid #4CAF50;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.small-btn:hover {
-    background-color: #4CAF50;
+    padding: 10px;
+    background-color: #007bff;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.login-form-for {
+    display: flex;
+    flex-direction: column;
+
+    text-align: start;
+}
+.login-form-for label{
+    font-size: 1.3rem;
+}
+.login-form-for input{
+border-radius: 20px;
+    font-size: 2rem;
+}
+.register-form-for{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    
+}
+.register-form-for label{
+    border-radius:20px ;
+    font-size: 1.3rem;
+}
+.register-form-for input{
+    border-radius: 20px;
+    font-size: 2rem;
 }
